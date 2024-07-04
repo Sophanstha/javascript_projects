@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: cornflowerblue;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#conatiner{
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+#conatiner img{
+    width: 100%;    
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+#conatiner h1{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+#conatiner h5{
+    font-size: 15px;
+    color: red;
+    margin: 15px;
+}
+#conatiner button{
+    background-color: cadetblue;
+    color: white;
+    padding: 8px 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+/* #conatiner #remove{
+    background-color: aliceblue;
+    color: black;
+} */

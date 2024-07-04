@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: #fff;
+        }
+        .flag{
+
+        }
+    </style>
+</head>
+<body>
+    <label>num 1 : </label> <input type="text" class="num1"><br>
+    <label>num2 : </label> <input type="text" class="num2"><br>
+    
+    <button>sum</button> : <div id="ta">
+        
+    </div>
+
+</body>
+<script>
+    let num1 = document.querySelector(".num1")
+    let num2 = document.querySelector(".num2")
+
+    // let ta = document.querySelector("#ta")
+    let b = document.querySelector("button")
+
+    b.addEventListener('click' , function(){
+        // e.preventDefault()
+        // // document.write(parseInt(num1.value))
+        let textarea = document.createElement("textarea")
+        let a = parseInt(num1.value)
+        let b = parseInt(num1.value)
+        textarea.classList.add("flag")
+        document.body.appendChild(textarea)
+        textarea.textContent = `${a+b}`
+        setTimeout( ()=>{
+        textarea.remove()
+        },1500 )
+    })
+    // b.addEventListener('')
+</script>
+</html>

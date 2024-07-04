@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: wheat;
+}
+ html body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+} 
+#main{
+    position: relative;
+}
+.ele{
+    height: 120px;
+    width: 100%;
+ /* background-color: brown; */
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ border-bottom: 2px solid white;
+ position: relative;
+}
+.ele h1{
+    font-size: 5vw;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+.ele img{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    object-position:center ;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: all linear 0.2s;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      html body {
+        background-color: cadetblue;
+        height: 100%;
+        width: 100%;
+      }
+      #main {
+        /* background-color: cadetblue; */
+        height: 100%;
+        width: 100%;
+      }
+      .nav {
+        height: 60px;
+        border: 2px solid black;
+        width: 100%;
+        background-color: black;
+      }
+      .nav ul {
+        display: flex;
+        /* justify-content: space-around; */
+        justify-content: center;
+        align-items: center;
+        /* margin: 10px; */
+      }
+      .nav ul li {
+        margin-left: 20px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="nav">
+        <ul>
+          <li>home</li>
+          <li>about us</li>
+          <li>contract</li>
+          <li>Location</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    let n = document.querySelectorAll("li")
+    // let arr = Array.from(n)
+    n.forEach( (btn)=>{
+      btn.addEventListener('click',(e)=>{
+        // console.log(e.target.innerHTML);
+          alert(`YOU HAVE CLICK ${e.target.innerHTML}`)
+      } )
+    } )
+  </script>
+</html>

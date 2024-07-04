@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    background-color: antiquewhite;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(15, 12, 12);
+    list-style: none;
+    color: white;
+}
+nav ul li{
+    padding: 0 10px;
+
+}
+.log img{
+    height: 33px;
+    padding: 0 8px;
+}
+.log{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+.button{
+    height: 75px;
+    margin-bottom: -2px;
+    background-color: black;
+    color:white;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button .icon{
+    display: flex;
+    gap: 1.5rem; 
+    margin-top: 0px;
+}
+#range{
+    width: 80vw;
+}
+.con{
+    height: 72.5vh;
+    background-color: black;
+    margin: 20px auto;
+    width: 90%;
+    color: white;
+    padding: 12px;
+    border-radius: 12px; 
+   background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2012/09/10/13854/c0e329247720e339668d47bee5b3558f-700.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.button i{
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.sonbanner{
+    width: 320px;
+    height: 50px;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    margin: 7px 0;
+}
+.sonbanner img{
+    /* z-index: 1; */
+    overflow: hidden;
+    height:43px;
+    width: 43px;
+    /* object-fit: c; */
+    border-radius: 50%;
+    margin: 6px 10px;
+    line-height: 43px;
+}
+.sonbanner #text{
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+}
+.sonbanner .time{
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.sonbanner i{
+    font-size: 18px;
+}
+.songinfo{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.songinfo img{
+    margin-left: 15px;
+    height: 2em;
+    width: 100px;
+    margin-top: 5px ;
+    opacity: 0;
+    transition: opacity ease-in 0.5;
+}
+.songinfo h5{
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 5px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+

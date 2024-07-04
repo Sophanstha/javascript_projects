@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html body{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+}
+#main{
+    width: 500px;
+    height: 350px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+span{
+    display: block;
+    font-size: 40px;
+    /* background-color: transparent; */
+}
+.joke{
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    margin: 10px;
+    font-size: 15px;
+    padding: 2px;
+    word-spacing: 6px;
+    opacity: 0;
+}
+.flag{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+#btn{
+    border:none;
+    margin-top: 20px;
+    /* color: white; */
+    padding: 10px;
+    font-size: 17px
+}

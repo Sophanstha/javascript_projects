@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .board{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .cellconatiner{
+            display: flex;
+        }
+        .cell{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="board">
+
+    </div>
+
+
+    <script>
+let  BOARD = document.querySelector(".board")
+for(let i=0;i<8;i++){
+    let connatiner = document.createElement("div")
+    connatiner.classList.add("cellconnatiner");
+    for(let j=0;j<8;j++){
+        let cell = document.createElement("div");
+        cell.classList.add("cell");
+        connatiner.append(cell);
+        if(i%2===0){
+            if(j%2==0){
+            cell.style.backgroundColor="black";
+            }
+            else{
+            cell.style.backgroundColor="white";
+            }
+        }else{
+            if(j%2===0){
+            cell.style.backgroundColor="white";
+            }
+            else{
+            cell.style.backgroundColor="black";
+
+            }
+        }
+    }
+    BOARD.append(connatiner);
+}
+    </script>
+</body>
+</html>
